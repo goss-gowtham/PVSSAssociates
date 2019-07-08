@@ -1298,7 +1298,7 @@ form input[type="submit"], form button, form input[type="reset"] {
     background: none;
     border: none;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     font-size: 1.7142857143em;
     display: inline-block;
     vertical-align: middle;
@@ -1721,7 +1721,8 @@ form input[type="submit"], form button, form input[type="reset"] {
     font-size: 1.2857142857em; }
   .site-footer .colophon {
     padding-top: 10px;
-    clear: both; }
+    clear: both;
+    font-style: italic;}
   .site-footer .social-links a {
     width: 40px;
     height: 40px;
