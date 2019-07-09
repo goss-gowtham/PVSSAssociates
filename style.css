@@ -46,7 +46,8 @@ textarea {
   font-family: sans-serif; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  text-align: justify;}
 
 a {
   background: transparent; }
@@ -1660,6 +1661,7 @@ form input[type="submit"], form button, form input[type="reset"] {
   width:150px;
   height:150px;
 }
+
 /*Project Single page*/
 .cursor {
   cursor: pointer;
