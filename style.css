@@ -1370,7 +1370,7 @@ form input[type="submit"], form button, form input[type="reset"] {
       overflow: hidden;
       height: 0; }
     .hero-slider .slides li {
-      min-height: 680px;
+      min-height: 100vh;
       background-size: cover;
       width: 100%;
       background-position: center center; }
@@ -1386,14 +1386,24 @@ form input[type="submit"], form button, form input[type="reset"] {
       text-shadow: 2px 2px 10px #000;
       color: white;
       margin-bottom: 10px; }
-  .hero-slider .flex-direction-nav {
+  .hero-slider .flex-direction-nav .flex-prev{
     position: absolute;
-    bottom: 50px;
+    bottom: 50%;
     left: 0;
+    right: 10;
+    margin: auto;
+    z-index: 99;
+    height: 60px;
+    list-style: none;
+    padding: 0 15px; }
+  .hero-slider .flex-direction-nav .flex-next{
+    position: absolute;
+    bottom: 50%;
+    left: 10;
     right: 0;
     margin: auto;
     z-index: 99;
-    height: 40px;
+    height: 60px;
     list-style: none;
     padding: 0 15px; }
     @media screen and (min-width: 768px) {
