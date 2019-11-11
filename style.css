@@ -46,8 +46,7 @@ textarea {
   font-family: sans-serif; }
 
 body {
-  margin: 0;
-  text-align: justify;}
+  margin: 0;}
 
 a {
   background: transparent; }
@@ -1286,12 +1285,24 @@ form input[type="submit"], form button, form input[type="reset"] {
     text-shadow: 2px 2px 20px #000;
     letter-spacing: 2px;
     margin-bottom: 0; }
-    #branding .site-title a {
-      color: white; }
-  #branding .site-description {
-    font-size: 11px;
-    font-size: 0.7857142857em;
-    color: #585858; }
+    @media screen and (max-width: 768px) {
+      #branding .site-title {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-family: broadway;
+        text-shadow: 2px 2px 20px #000;
+        letter-spacing: 2px;
+        margin-bottom: 0; }
+     }
+    @media screen and (max-width: 480px) {
+      #branding .site-title {
+        font-size: 17px;
+        text-transform: capitalize;
+        font-family: broadway;
+        text-shadow: 2px 2px 20px #000;
+        letter-spacing: 2px;
+        margin-bottom: 0; }
+    }
 
 .main-navigation {
   float: right; }
@@ -1464,7 +1475,6 @@ form input[type="submit"], form button, form input[type="reset"] {
     }
     .project .project-thumbnail img {
       max-width: 100%;
-      height:30vh;
       box-shadow: 2px 2px 30px #000;
       display: block; }
   .project .project-title {
@@ -1714,7 +1724,7 @@ form input[type="submit"], form button, form input[type="reset"] {
   margin-top: 50px; }
   .site-footer .container {
     border-top: 1px solid #383838;
-    padding: 50px 15px 30px;
+    padding: 30px 15px 30px;
     position: relative;
     *zoom: 1; }
     .site-footer .container:after {
@@ -1730,9 +1740,14 @@ form input[type="submit"], form button, form input[type="reset"] {
     font-size: 18px;
     font-size: 1.2857142857em; }
   .site-footer .colophon {
-    padding-top: 10px;
+    padding-top: 20px;
     clear: both;
     font-style: italic;}
+    @media screen and (max-width: 480px) {
+      .site-footer .colophon {
+        padding-top: 7px;
+        clear: both;
+        font-style: italic;} }
   .site-footer .social-links a {
     width: 40px;
     height: 40px;
