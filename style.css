@@ -1485,8 +1485,7 @@ form input[type="submit"], form button, form input[type="reset"] {
       object-fit: cover;
       display: block; }
   .project .project-title {
-    font-size: 18px;
-    font-size: 1.2857142857em;
+    font-size: 17px;
     font-weight: 300;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -1673,8 +1672,8 @@ form input[type="submit"], form button, form input[type="reset"] {
   color: black;
   border-radius: 32px;
   padding: 3px 5px;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 500;
   letter-spacing: 0px;
 }
 
