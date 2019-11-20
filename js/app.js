@@ -24,6 +24,7 @@
 	$(window).load(function(){
 		var $container = $('.filterable-items');
 	   $(".filterable-nav").show();
+	   $("#spin").hide();
 	    $container.isotope({
 	        filter: '.architecture,.interior,.renovation',
 	        layoutMode: 'fitRows',

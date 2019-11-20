@@ -60,7 +60,7 @@ p {
 a {
   background: transparent; }
   a:focus {
-    outline: thin dotted; }
+    outline: 0; }
   a:hover, a:active {
     outline: 0; }
 
@@ -1585,8 +1585,17 @@ form input[type="submit"], form button, form input[type="reset"] {
     line-height: 2;
     position: relative; }
 
+#spin{
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  margin: 30px;
+  color: #f4c545;
+}
+
 .filterable-nav {
   display: none;
+  text-align: center;
   margin: 50px 0; }
   .filterable-nav .mobile-filter {
     display: none;
