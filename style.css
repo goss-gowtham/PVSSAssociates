@@ -1586,6 +1586,7 @@ form input[type="submit"], form button, form input[type="reset"] {
     position: relative; }
 
 .filterable-nav {
+  display: none;
   margin: 50px 0; }
   .filterable-nav .mobile-filter {
     display: none;
@@ -1638,6 +1639,7 @@ form input[type="submit"], form button, form input[type="reset"] {
       bottom: -10px;
       right: -10px; }
     .filterable-nav a.current, .filterable-nav a:hover {
+      background-color: #000;
       border-color: #f4c545;
       color: #f4c545; }
       .filterable-nav a.current:before, .filterable-nav a.current:after, .filterable-nav a:hover:before, .filterable-nav a:hover:after {

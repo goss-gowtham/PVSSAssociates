@@ -20,11 +20,14 @@
 		});
 	});
 
+	$(document).ready(function() {
+	     $(".filterable-nav").show();
+	});
+
 	$(window).load(function(){
 		var $container = $('.filterable-items');
-
 	    $container.isotope({
-	        filter: '*',
+	        filter: '.architecture,.interior,.renovation',
 	        layoutMode: 'fitRows',
 	        animationOptions: {
 	            duration: 750,
