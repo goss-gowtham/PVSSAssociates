@@ -1538,6 +1538,39 @@ form input[type="submit"], form button, form input[type="reset"] {
     font-size: 1.1428571429em;
     line-height: 2; }
 
+.intro p{
+  font-size: 20px;
+  text-align: justify;
+  color: white;
+  line-height: 1.3;
+}
+.intro #intro-title{
+  text-align: center;
+  font-size: 21px;
+  color: #f4c545;
+  font-family: Limelight;
+}
+.intro .about-date {
+  font-size: 18px;
+  font-weight: 50;
+  font-family: cursive;
+}
+.intro .about-company{
+  font-size: 21px;
+  color: #f4c545;
+  font-family: Roboto;
+  font-weight: 200;
+}
+#about-logo {
+  position: relative;
+  display: block;
+  margin:20px auto;
+  box-shadow: 2px 2px 20px #000;
+  align-content: center;
+  width:250px;
+  height:250px;
+  }
+
 .feature-numbered {
   text-align: center; }
   .feature-numbered .num {
