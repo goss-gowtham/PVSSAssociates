@@ -20,12 +20,10 @@
 		});
 	});
 
-	$(document).ready(function() {
-	     $(".filterable-nav").show();
-	});
 
 	$(window).load(function(){
 		var $container = $('.filterable-items');
+	   $(".filterable-nav").show();
 	    $container.isotope({
 	        filter: '.architecture,.interior,.renovation',
 	        layoutMode: 'fitRows',
