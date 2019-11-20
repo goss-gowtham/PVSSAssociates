@@ -1561,6 +1561,9 @@ form input[type="submit"], form button, form input[type="reset"] {
   font-family: Roboto;
   font-weight: 200;
 }
+.intro .about-indent{
+  text-indent:10%;
+}
 #about-logo {
   position: relative;
   display: block;
@@ -1737,7 +1740,9 @@ form input[type="submit"], form button, form input[type="reset"] {
   font-weight: 500;
   letter-spacing: 0px;
   line-height: 1;
+  margin-left: 3px;
 }
+
 
 .colon {
   color: #f4c545;
@@ -1835,6 +1840,6 @@ form input[type="submit"], form button, form input[type="reset"] {
     font-style: italic;}
     @media screen and (max-width: 480px) {
       .site-footer .colophon {
-        padding-top: 7px;
+        padding-top: 15px;
         clear: both;
         font-style: italic;} }
