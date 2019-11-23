@@ -1,12 +1,5 @@
-/*!
- * Project_Name: Themezy Modern Architecture
- * Author: Themezy
- * Email: info@themezy.com
- * URL: http://themezy.com
- */
-/*===========================================
- * Importing CSS Libraries
- *===========================================*/
+/* Developed by Gowthamnarayanan S */
+
 @import url('https://fonts.googleapis.com/css?family=Limelight&display=swap');
 
 article,
@@ -48,7 +41,9 @@ textarea {
   font-family: sans-serif; }
 
 body {
-  margin: 0;}
+  margin: 0;
+  min-height:100vh;
+}
 
 body ::selection {
   background-color: #f4c545;
@@ -315,8 +310,8 @@ form input[type="submit"], form button, form input[type="reset"] {
 
 .button-back {
   display: inline-block;
-  padding: 10px 30px;
-  margin-bottom: 50px;
+  padding: 10px 25px;
+  margin-bottom: 25px;
   position: relative;
   border: 2px solid #383838;
   color: #fff;
@@ -1666,6 +1661,9 @@ form input[type="submit"], form button, form input[type="reset"] {
     overflow: hidden;
     height: 0; }
 
+.architecture-back {
+  display: none;
+}
 .project-item {
   padding: 0 15px;
   margin-bottom: 30px;
@@ -1814,7 +1812,8 @@ form input[type="submit"], form button, form input[type="reset"] {
  * Footer Styles
  */
 .site-footer {
-  margin-top: 50px; }
+  margin-top: 50px;
+ }
   .site-footer .container {
     border-top: 1px solid #383838;
     padding: 30px 15px 30px;
@@ -1831,8 +1830,7 @@ form input[type="submit"], form button, form input[type="reset"] {
     margin-right: 20px; }
   .site-footer .phone {
     padding-left: 100px;
-    font-size: 18px;
-    font-size: 1.2857142857em;
+    font-size: 15px;
   }
   .site-footer .colophon {
     padding-top: 35px;

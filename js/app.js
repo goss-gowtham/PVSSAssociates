@@ -24,9 +24,10 @@
 	$(window).load(function(){
 		var $container = $('.filterable-items');
 	   $(".filterable-nav").show();
+		 $(".filter-architecture").hide();
 	   $("#spin").hide();
 	    $container.isotope({
-	        filter: '.architecture,.interior,.renovation',
+	        filter: '*',
 	        layoutMode: 'fitRows',
 	        animationOptions: {
 	            duration: 750,
@@ -34,23 +35,28 @@
 	            queue: false
 	        }
 	    });
-
-	    $('.filterable-nav a').click(function(e){
-	    	e.preventDefault();
-	        $('.filterable-nav .current').removeClass('current');
-	        $(this).addClass('current');
-
-	        var selector = $(this).attr('data-filter');
-	        $container.isotope({
-	            filter: selector,
-	            animationOptions: {
-	                duration: 750,
-	                easing: 'linear',
-	                queue: false
-	            }
-	         });
-	         return false;
-	    });
+		    $('.filterable-nav a').click(function(e){
+		    	e.preventDefault();
+					console.log(e);
+		        $('.filterable-nav .current').removeClass('current');
+		        $(this).addClass('current');
+		        var selector = $(this).attr('data-filter');
+						console.log(selector);
+						if(selector==".architecture"||selector==".industrial" || selector==".residential" || selector==".institution"){
+							$('.filter-architecture').show();
+							$('.all-filter').hide();
+							$('.architecture-back').show();
+						}
+		        $container.isotope({
+		            filter: selector,
+		            animationOptions: {
+		                duration: 750,
+		                easing: 'linear',
+		                queue: false
+		            }
+		         });
+		         return false;
+		    });
 	    $('.mobile-filter').change(function(){
 
 	        var selector = $(this).val();
