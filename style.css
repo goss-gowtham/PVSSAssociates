@@ -1680,7 +1680,7 @@ form input[type="submit"], form button, form input[type="reset"] {
   margin-bottom: 30px;
   margin-left: 0px;
   float: left; }
-  @media screen and (min-width: 481px and max-width: 900px) {
+  @media screen and (max-width: 900px) {
     .project-item{
       width: 50%; } }
   @media screen and (max-width: 480px) {
