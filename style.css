@@ -1668,13 +1668,6 @@ form input[type="submit"], form button, form input[type="reset"] {
   display: none;
 }
 
-/* Placeholder image */
-.featured-image {
-  background-image: url(images/logo.jpg);
-  object-fit: cover;
-  width: 350px;
-  height: 250px;
-}
 .project-item {
   padding: 0 15px;
   margin-bottom: 30px;
@@ -1689,6 +1682,7 @@ form input[type="submit"], form button, form input[type="reset"] {
   .project-item img {
     max-width: 100%;
     margin-bottom: 20px;
+    background-image: url(images/logo.jpg);
     height: 250px;
     width: 350px;
     object-fit: cover;
