@@ -15,6 +15,7 @@
 			controlNav: false,
 			directionNav: true,
 			animation: "fade",
+			slideshowSpeed:7000,
 			prevText:'<i class="fa fa-angle-left"></i>',
 			nextText:'<i class="fa fa-angle-right"></i>',
 		});
@@ -71,5 +72,17 @@
 	         return false;
 	    });
 	});
-
+	$(window).scroll(function() {
+    if ($(this).scrollTop()) {
+        $('#toTop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('#toTop').stop(true, true).fadeOut();
+    }
+		$('filterable-items').fadeIn(300);
+	});
+	$('#toTop').click(function(e) {
+			e.preventDefault();
+			$('html, body').animate({scrollTop: 0});
+			return false;
+	});
 })(jQuery, document, window);

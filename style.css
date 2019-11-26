@@ -43,6 +43,8 @@ textarea {
 body {
   margin: 0;
   min-height:100vh;
+  background-color: #212121;
+  overflow: auto;
 }
 
 body ::selection {
@@ -270,6 +272,28 @@ form textarea {
 form input[type="submit"], form button, form input[type="reset"] {
   outline: none; }
 
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000;
+    border-radius: 36px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 36px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:active {
+    background: #f4c545;
+  }
 /*
  * Reusable Components Style
  */
@@ -1596,6 +1620,11 @@ form input[type="submit"], form button, form input[type="reset"] {
 .filterable-nav {
   display: none;
   text-align: center;
+  position: sticky;
+  top:0;
+  z-index: 300;
+  background-color: #212121;
+  padding: 10px;
   margin: 50px 0; }
   .filterable-nav .mobile-filter {
     display: none;
@@ -1604,14 +1633,17 @@ form input[type="submit"], form button, form input[type="reset"] {
     appearance: none;
     border: 2px solid #f4c545;
     padding: 10px 20px;
+    margin-left: 20px;
+    text-align: center;
     color: #f4c545;
-    border-radius: 0;
+    border-radius: 5px;
     background: none;
     text-transform: uppercase;
     outline: none; }
     @media screen and (max-width: 768px) {
       .filterable-nav .mobile-filter {
-        display: block; } }
+        display: block;
+      } }
   .filterable-nav a {
     display: inline-block;
     padding: 10px 20px;
@@ -1661,11 +1693,24 @@ form input[type="submit"], form button, form input[type="reset"] {
     content: " ";
     clear: both;
     display: block;
-    overflow: hidden;
     height: 0; }
 
 .architecture-back {
   display: none;
+}
+
+#toTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  color: #f4c545;
+  cursor: pointer;
+  border-radius: 32px;
 }
 
 .project-item {
@@ -1737,7 +1782,7 @@ form input[type="submit"], form button, form input[type="reset"] {
   background-color: white;
   text-transform: capitalize;
   color: black;
-  border-radius: 16px;
+  border-radius: 12px;
   padding: 3px 5px;
   font-size: 12px;
   font-weight: 500;
