@@ -19,15 +19,14 @@
 			prevText:'<i class="fa fa-angle-left"></i>',
 			nextText:'<i class="fa fa-angle-right"></i>',
 		});
-	  $("#myInput").on("keyup", function() {
-	    var value = $(this).val().toLowerCase();
-	    $(".filterable-item").filter(function() {
-	      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-	    });
-	  });
+	  // $("#myInput").on("keyup", function() {
+	  //   var value = $(this).val().toLowerCase();
+	  //   $(".filterable-item").filter(function() {
+	  //     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+	  //   });
+	  // });
+
 	});
-
-
 	$(window).load(function(){
 		var $container = $('.filterable-items');
 		console.log($container);
