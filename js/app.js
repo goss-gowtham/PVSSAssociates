@@ -29,7 +29,6 @@
 	});
 	$(window).load(function(){
 		var $container = $('.filterable-items');
-		console.log($container);
 	   $(".filterable-nav").show();
 		 $(".filter-architecture").hide();
 	   $("#spin").hide();
@@ -45,23 +44,17 @@
 	    });
 		    $('.filterable-nav a').click(function(e){
 		    	e.preventDefault();
-					console.log(e);
-		        $('.filterable-nav .current').removeClass('current');
-		        $(this).addClass('current');
+		        $('.filterable-nav').removeClass('current');
+						$(this).addClass('current');
 		        var selector = $(this).attr('data-filter');
-						console.log(selector);
-						if(selector=="*"){
-							$('#myInput').show();
-						}
-						else{
-							$('#myInput').hide();
-						}
 						if(selector==".architecture" || selector==".industrial" || selector==".residential" || selector==".institution"){
 							$('.filter-architecture').show();
 							$('.all-filter').hide();
-							$('.architecture-back').show();
 						}
-						console.log($container.not('.row'));
+						else{
+							$('.all-filter').show();
+							$('.filter-architecture').hide();
+						}
 		        $container.isotope({
 								itemSelector: '.project-item',
 		            filter: selector,
