@@ -19,15 +19,23 @@
 			prevText:'<i class="fa fa-angle-left"></i>',
 			nextText:'<i class="fa fa-angle-right"></i>',
 		});
+	  $("#myInput").on("keyup", function() {
+	    var value = $(this).val().toLowerCase();
+	    $(".filterable-item").filter(function() {
+	      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+	    });
+	  });
 	});
 
 
 	$(window).load(function(){
 		var $container = $('.filterable-items');
+		console.log($container);
 	   $(".filterable-nav").show();
 		 $(".filter-architecture").hide();
 	   $("#spin").hide();
 	    $container.isotope({
+					itemSelector:'.project-item',
 	        filter: '*',
 	        layoutMode: 'fitRows',
 	        animationOptions: {
@@ -43,12 +51,20 @@
 		        $(this).addClass('current');
 		        var selector = $(this).attr('data-filter');
 						console.log(selector);
-						if(selector==".architecture"||selector==".industrial" || selector==".residential" || selector==".institution"){
+						if(selector=="*"){
+							$('#myInput').show();
+						}
+						else{
+							$('#myInput').hide();
+						}
+						if(selector==".architecture" || selector==".industrial" || selector==".residential" || selector==".institution"){
 							$('.filter-architecture').show();
 							$('.all-filter').hide();
 							$('.architecture-back').show();
 						}
+						console.log($container.not('.row'));
 		        $container.isotope({
+								itemSelector: '.project-item',
 		            filter: selector,
 		            animationOptions: {
 		                duration: 750,

@@ -54,240 +54,245 @@
 
 				<div class="page">
 					<div class="container">
-						<h2 class="entry-title">We strive to give you the best</h2>
+						<div class="row">
+							<div class="col-sm-12 col-md-8 col-lg-8">
+								<h2 class="entry-title">We strive to give you the best</h2>
+							</div>
+							<div class="col-sm-12 col-md-4 col-lg-4">
+								<input id="myInput" type="text" placeholder="Search..">
+							</div>
 						<div id="spin"><i class="fa fa-spinner fa-spin"></i></div>
 						<a href="projects" class="button-back architecture-back"><img src="images/arrow-back.png" alt="back" class="icon">Back to All projects</a>
-						<div class="filter-links filterable-nav">
-							<select class="mobile-filter">
-								<option value=".architecture,.interior,.renovation">Show all</option>
-								<option value=".interior">Interiors</option>
-								<option value=".architecture">Architecture</option>
-								<option value=".urbandesign">Urban Design</option>
-								<option value=".construction">Construction Management</option>
-								<option value=".renovation">Renovation</option>
-							</select>
-							<div class="all-filter">
-							<a href="#" class="current wow fadeInRight" data-filter="*">Show all</a>
-							<a href="#" class="wow fadeInRight" data-wow-delay=".6s" data-filter=".interior">Interiors</a>
-							<a href="#" class="wow fadeInRight" data-wow-delay=".2s" data-filter=".architecture">Architecture</a>
-							<a href="#" class="wow fadeInRight" data-wow-delay=".6s" data-filter=".urbandesign">Urban Design</a>
-							<a href="#" class="wow fadeInRight" data-wow-delay=".4s" data-filter=".construction">Construction Management</a>
-							<a href="#" class="wow fadeInRight" data-wow-delay=".6s" data-filter=".renovation">Renovation</a>
-						</div>
-							<div class="filter-architecture">
-								<a href="#" class="wow fadeInRight" data-wow-delay=".6s" data-filter=".residential"> Residential</a>
-								<a href="#" class="wow fadeInRight" data-wow-delay=".2s" data-filter=".industrial">Industrial</a>
-								<a href="#" class="wow fadeInRight" data-wow-delay=".6s" data-filter=".institution">Institution</a>
+								<div class="col-md-12">
+									<div class="filter-links filterable-nav">
+								<select class="mobile-filter">
+									<option value=".architecture,.interior,.renovation">Show all</option>
+									<option value=".interior">Interiors</option>
+									<option value=".architecture">Architecture</option>
+									<option value=".urbandesign">Urban Design</option>
+									<option value=".construction">Construction Management</option>
+									<option value=".renovation">Renovation</option>
+								</select>
+								<div class="all-filter">
+								<a href="#" class="current wow fadeInRight" data-filter="*">Show all</a>
+								<a href="#" class="wow fadeInRight" data-wow-delay=".6s" data-filter=".interior">Interiors</a>
+								<a href="#" class="wow fadeInRight" data-wow-delay=".2s" data-filter=".architecture">Architecture</a>
+								<a href="#" class="wow fadeInRight" data-wow-delay=".6s" data-filter=".urbandesign">Urban Design</a>
+								<a href="#" class="wow fadeInRight" data-wow-delay=".4s" data-filter=".construction">Construction Management</a>
+								<a href="#" class="wow fadeInRight" data-wow-delay=".6s" data-filter=".renovation">Renovation</a>
+								</div>
+								<div class="filter-architecture">
+									<a href="#" class="current wow fadeInRight" data-wow-delay=".6s" data-filter=".residential"> Residential</a>
+									<a href="#" class="wow fadeInRight" data-wow-delay=".2s" data-filter=".industrial">Industrial</a>
+									<a href="#" class="wow fadeInRight" data-wow-delay=".6s" data-filter=".institution">Institution</a>
+								</div>
 							</div>
-				</div>
-						<div class="filterable-items">
-							<div class="project-item filterable-item architecture residential">
-								<figure class="featured-image">
-									<a href="projects/SundaramResidence"><img src="Architecture/SundaramResidence/sundar1.JPG" alt="Sundaram Residence"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/SundaramResidence">Mr. Sundaram House</a></h2>
-										<p class="project-subtitle">Salem <span class="colon">|</span> 2007 <span class="label">Residential</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item renovation">
-								<figure class="featured-image">
-									<a href="projects/Attur-Kannadasan"><img src="Renovation/KannadasanResidenceAttur/attur1.jpg" alt="#"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/Attur-Kannadasan">Kannadasan House</a></h2>
-										<p class="project-subtitle">Attur <span class="colon">|</span> 2009 <span class="label">Residential</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item renovation">
-								<figure class="featured-image">
-									<a href="projects/Arani-SureshResidence"><img src="Renovation/SureshResidenceArani/suresh1.jpg" alt="Arani-Suresh Residence"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/Arani-SureshResidence">Suresh House</a></h2>
-										<p class="project-subtitle">Arani <span class="colon">|</span> 2010 <span class="label">Residential</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item renovation">
-								<figure class="featured-image">
-									<a href="projects/NagarajResidence"><img src="Renovation/NagarajResidence/naga1.jpg" loading="lazy" alt="#"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/NagarajResidence">Nagaraj House</a></h2>
-										<p class="project-subtitle">Salem <span class="colon">|</span> 2012 <span class="label">Residential</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item interior">
-								<figure class="featured-image">
-									<a href="projects/6ftoffice"><img src="Interior/6FTOffice/3.jpg" loading="lazy" alt="6 Feet Office"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/6ftoffice">6 Feet Interiors</a></h2>
-										<p class="project-subtitle">Salem <span class="colon">|</span> 2013 <span class="label">Office</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item renovation">
-								<figure class="featured-image">
-									<a href="projects/SekarResidence"><img src="Renovation/SekarResidence/sekar4.jpg" loading="lazy" alt="Sekar Residence"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/SekarResidence">Chandrasekar House</a></h2>
-										<p class="project-subtitle">Salem <span class="colon">|</span> 2014 <span class="label">Residential</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item interior">
-								<figure class="featured-image">
-									<a href="projects/ShahulBelur"><img src="Architecture/ShahulHameedBelur/shahul1.JPG" loading="lazy" alt="Shahul Hameed Belur Residence"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/ShahulBelur">Shahul Hameed Interiors</a></h2>
-										<p class="project-subtitle">Belur <span class="colon">|</span> 2014 <span class="label">Living</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item architecture residential">
-								<figure class="featured-image">
-									<a href="projects/VenkatrajResidence"><img src="Architecture/VenkatrajResidence/venkat1.jpg" loading="lazy" alt="Venkatraj Residence"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/VenkatrajResidence">Mr. Venkatraj House</a></h2>
-										<p class="project-subtitle">Salem <span class="colon">|</span> 2015 <span class="label">Residential</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item architecture industrial">
-								<figure class="featured-image">
-									<a href="projects/aeplmallur"><img src="Architecture/AEPLMallur/aepl1.jpg" loading="lazy" alt="#"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/aeplmallur">AEPL</a></h2>
-										<p class="project-subtitle">Mallur <span class="colon">|</span> 2016 <span class="label">Industrial</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item interior">
-								<figure class="featured-image">
-									<a href="projects/MallikaraniHall"><img src="Interior/Mallikarani%20Hall%20Interiors/malli3.jpg" loading="lazy" alt="Mallikarani Interiors"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/MallikaraniHall">Dr. Mallikarani Interiors</a></h2>
-										<p class="project-subtitle">Salem <span class="colon">|</span> 2016 <span class="label">Living</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item interior">
-								<figure class="featured-image">
-									<a href="projects/KRC"><img src="Interior/KRC/krc1.jpg" loading="lazy" alt="KRC Interiors"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/KRC">KRC Interiors</a></h2>
-										<p class="project-subtitle">Salem <span class="colon">|</span> 2016 <span class="label">Dining & Kitchen</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item interior">
-								<figure class="featured-image">
-									<a href="projects/metroIT"><img src="Interior/MetroITSystem/metro1.jpg" loading="lazy" alt="Metro IT System"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/metroIT">Metro IT Systems</a></h2>
-										<p class="project-subtitle">Salem <span class="colon">|</span> 2016 <span class="label">Showroom</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item architecture residential">
-								<figure class="featured-image">
-									<a href="projects/HillView"><img src="Architecture/HillViewVillasSalem/hill1.jpg" loading="lazy" alt="#"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/HillView">Hill View Villas</a></h2>
-										<p class="project-subtitle">Salem <span class="colon">|</span> 2016 <span class="label">Residential</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item architecture industrial">
-								<figure class="featured-image">
-									<a href="projects/aeplhosur"><img src="Architecture/AEPLHosur/aepl1.jpg" loading="lazy" alt="#"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/aeplhosur">AEPL</a></h2>
-										<p class="project-subtitle">Hosur <span class="colon">|</span> 2016 <span class="label">Industrial</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item interior">
-								<figure class="featured-image">
-									<a href="projects/EshulalOffice"><img src="Interior/EshulalOfficeSalem/office1.jpg" loading="lazy" alt="Eshulal Office"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/EshulalOffice">Eshulal Interiors</a></h2>
-										<p class="project-subtitle">Salem <span class="colon">|</span> 2016 <span class="label">Office</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item architecture residential">
-								<figure class="featured-image">
-									<a href="projects/RKresidence"><img src="Architecture/RKResidenceSalem/rk1.jpg" loading="lazy" alt="RK Residence"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/RKresidence">RK Residence</a></h2>
-										<p class="project-subtitle">Salem <span class="colon">|</span> 2016 <span class="label">Residential</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item interior">
-								<figure class="featured-image">
-									<a href="projects/KMS-Garden"><img src="Interior/KMS/kms1.JPG" loading="lazy" alt="KMS Garden"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/KMS-Garden">KMS Garden</a></h2>
-										<p class="project-subtitle">Chennai <span class="colon">|</span> 2016 <span class="label">Interiors</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item interior">
-								<figure class="featured-image">
-									<a href="projects/ShahulHameedInteriors"><img src="Interior/ShahulHameedInteriors/inter1.jpg" loading="lazy" alt="Shahul Hameed Interiors"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/ShahulHameedInteriors">Shahul Hameed Interiors</a></h2>
-										<p class="project-subtitle">Belur <span class="colon">|</span> 2016 <span class="label">Interiors</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item architecture institution">
-								<figure class="featured-image">
-									<a href="projects/JSWAuditorium"><img src="Architecture/JSWAuditoriumMecheri/jsw1.jpg" loading="lazy" alt="JSW Auditorium"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/JSWAuditorium">JSW Auditorium</a></h2>
-										<p class="project-subtitle">Mecheri <span class="colon">|</span> 2017 <span class="label">Institution</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item interior">
-								<figure class="featured-image">
-									<a href="projects/TexmoShowroom"><img src="Interior/TexmoShowroomThathayangarpet/texmo1.jpg" loading="lazy" alt="Texmo Showroom"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/TexmoShowroom">Texmo Showroom</a></h2>
-										<p class="project-subtitle">Thathayangarpet <span class="colon">|</span> 2017 <span class="label">Showroom</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item architecture residential">
-								<figure class="featured-image">
-									<a href="projects/ShahulPerambalur"><img src="Architecture/ShahulHameedPerambalur/shahul1.jpg" loading="lazy" alt="Shahul Hamed-Perambalur"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/ShahulPerambalur">Shahul Hameed House</a></h2>
-										<p class="project-subtitle">Perambalur <span class="colon">|</span> 2018 <span class="label">Residential</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item interior">
-								<figure class="featured-image">
-									<a href="projects/kmsroof"><img src="Interior/KMSRoof/roof1.JPG" loading="lazy" alt="KMS Roof Garden"></a>
-									<figcaption>
-										<h2 class="project-title"><a href="projects/kmsroof">KMS Roof Garden</a></h2>
-										<p class="project-subtitle">Chennai <span class="colon">|</span> 2019 <span class="label">Interiors</span></p>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="project-item filterable-item urbandesign">
-										<h2 class="project-title"><a href="#">Thanks for your Interest</a></h2>
-										<p class="project-subtitle">We will be establishing Urban Design soon</p>
-							</div>
-							<div class="project-item filterable-item construction">
-										<h2 class="project-title"><a href="#">Thanks for your Interest</a></h2>
-										<p class="project-subtitle">We will be establishing Construction soon</p>
-							</div>
-						</div>
+								</div>
+								<div class="col-md-12">
+									<div class="filterable-items">
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item interior residential">
+												<figure class="featured-image">
+													<a href="projects/SundaramResidence"><img src="Architecture/SundaramResidence/sundar1.JPG" alt="Sundaram Residence"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/SundaramResidence">Mr. Sundaram House</a></h2>
+														<p class="project-subtitle">Salem <span class="colon">|</span> 2007 <span class="label">Residential</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item renovation">
+												<figure class="featured-image">
+													<a href="projects/Attur-Kannadasan"><img src="Renovation/KannadasanResidenceAttur/attur1.jpg" alt="#"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/Attur-Kannadasan">Kannadasan House</a></h2>
+														<p class="project-subtitle">Attur <span class="colon">|</span> 2009 <span class="label">Residential</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item renovation">
+												<figure class="featured-image">
+													<a href="projects/Arani-SureshResidence"><img src="Renovation/SureshResidenceArani/suresh1.jpg" alt="Arani-Suresh Residence"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/Arani-SureshResidence">Suresh House</a></h2>
+														<p class="project-subtitle">Arani <span class="colon">|</span> 2010 <span class="label">Residential</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item renovation">
+												<figure class="featured-image">
+													<a href="projects/NagarajResidence"><img src="Renovation/NagarajResidence/naga1.jpg" loading="lazy" alt="#"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/NagarajResidence">Nagaraj House</a></h2>
+														<p class="project-subtitle">Salem <span class="colon">|</span> 2012 <span class="label">Residential</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item interior">
+												<figure class="featured-image">
+													<a href="projects/6ftoffice"><img src="Interior/6FTOffice/3.jpg" loading="lazy" alt="6 Feet Office"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/6ftoffice">6 Feet Interiors</a></h2>
+														<p class="project-subtitle">Salem <span class="colon">|</span> 2013 <span class="label">Office</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item renovation">
+												<figure class="featured-image">
+													<a href="projects/SekarResidence"><img src="Renovation/SekarResidence/sekar4.jpg" loading="lazy" alt="Sekar Residence"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/SekarResidence">Chandrasekar House</a></h2>
+														<p class="project-subtitle">Salem <span class="colon">|</span> 2014 <span class="label">Residential</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item interior">
+												<figure class="featured-image">
+													<a href="projects/ShahulBelur"><img src="Architecture/ShahulHameedBelur/shahul1.JPG" loading="lazy" alt="Shahul Hameed Belur Residence"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/ShahulBelur">Shahul Hameed Interiors</a></h2>
+														<p class="project-subtitle">Belur <span class="colon">|</span> 2014 <span class="label">Living</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item architecture residential">
+												<figure class="featured-image">
+													<a href="projects/VenkatrajResidence"><img src="Architecture/VenkatrajResidence/venkat1.jpg" loading="lazy" alt="Venkatraj Residence"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/VenkatrajResidence">Mr. Venkatraj House</a></h2>
+														<p class="project-subtitle">Salem <span class="colon">|</span> 2015 <span class="label">Residential</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item architecture industrial">
+												<figure class="featured-image">
+													<a href="projects/aeplmallur"><img src="Architecture/AEPLMallur/aepl1.jpg" loading="lazy" alt="#"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/aeplmallur">AEPL</a></h2>
+														<p class="project-subtitle">Mallur <span class="colon">|</span> 2016 <span class="label">Industrial</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item interior">
+												<figure class="featured-image">
+													<a href="projects/MallikaraniHall"><img src="Interior/Mallikarani%20Hall%20Interiors/malli3.jpg" loading="lazy" alt="Mallikarani Interiors"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/MallikaraniHall">Dr. Mallikarani Interiors</a></h2>
+														<p class="project-subtitle">Salem <span class="colon">|</span> 2016 <span class="label">Living</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item interior">
+												<figure class="featured-image">
+													<a href="projects/KRC"><img src="Interior/KRC/krc1.jpg" loading="lazy" alt="KRC Interiors"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/KRC">KRC Interiors</a></h2>
+														<p class="project-subtitle">Salem <span class="colon">|</span> 2016 <span class="label">Dining & Kitchen</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item interior">
+												<figure class="featured-image">
+													<a href="projects/metroIT"><img src="Interior/MetroITSystem/metro1.jpg" loading="lazy" alt="Metro IT System"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/metroIT">Metro IT Systems</a></h2>
+														<p class="project-subtitle">Salem <span class="colon">|</span> 2016 <span class="label">Showroom</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item architecture residential">
+												<figure class="featured-image">
+													<a href="projects/HillView"><img src="Architecture/HillViewVillasSalem/hill1.jpg" loading="lazy" alt="#"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/HillView">Hill View Villas</a></h2>
+														<p class="project-subtitle">Salem <span class="colon">|</span> 2016 <span class="label">Residential</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item architecture industrial">
+												<figure class="featured-image">
+													<a href="projects/aeplhosur"><img src="Architecture/AEPLHosur/aepl1.jpg" loading="lazy" alt="#"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/aeplhosur">AEPL</a></h2>
+														<p class="project-subtitle">Hosur <span class="colon">|</span> 2016 <span class="label">Industrial</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item interior">
+												<figure class="featured-image">
+													<a href="projects/EshulalOffice"><img src="Interior/EshulalOfficeSalem/office1.jpg" loading="lazy" alt="Eshulal Office"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/EshulalOffice">Eshulal Interiors</a></h2>
+														<p class="project-subtitle">Salem <span class="colon">|</span> 2016 <span class="label">Office</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item architecture residential">
+												<figure class="featured-image">
+													<a href="projects/RKresidence"><img src="Architecture/RKResidenceSalem/rk1.jpg" loading="lazy" alt="RK Residence"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/RKresidence">RK Residence</a></h2>
+														<p class="project-subtitle">Salem <span class="colon">|</span> 2016 <span class="label">Residential</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item interior">
+												<figure class="featured-image">
+													<a href="projects/KMS-Garden"><img src="Interior/KMS/kms1.JPG" loading="lazy" alt="KMS Garden"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/KMS-Garden">KMS Garden</a></h2>
+														<p class="project-subtitle">Chennai <span class="colon">|</span> 2016 <span class="label">Interiors</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item interior">
+												<figure class="featured-image">
+													<a href="projects/ShahulHameedInteriors"><img src="Interior/ShahulHameedInteriors/inter1.jpg" loading="lazy" alt="Shahul Hameed Interiors"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/ShahulHameedInteriors">Shahul Hameed Interiors</a></h2>
+														<p class="project-subtitle">Belur <span class="colon">|</span> 2016 <span class="label">Interiors</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item architecture institution">
+												<figure class="featured-image">
+													<a href="projects/JSWAuditorium"><img src="Architecture/JSWAuditoriumMecheri/jsw1.jpg" loading="lazy" alt="JSW Auditorium"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/JSWAuditorium">JSW Auditorium</a></h2>
+														<p class="project-subtitle">Mecheri <span class="colon">|</span> 2017 <span class="label">Institution</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item interior">
+												<figure class="featured-image">
+													<a href="projects/TexmoShowroom"><img src="Interior/TexmoShowroomThathayangarpet/texmo1.jpg" loading="lazy" alt="Texmo Showroom"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/TexmoShowroom">Texmo Showroom</a></h2>
+														<p class="project-subtitle">Thathayangarpet <span class="colon">|</span> 2017 <span class="label">Showroom</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item architecture residential">
+												<figure class="featured-image">
+													<a href="projects/ShahulPerambalur"><img src="Architecture/ShahulHameedPerambalur/shahul1.jpg" loading="lazy" alt="Shahul Hamed-Perambalur"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/ShahulPerambalur">Shahul Hameed House</a></h2>
+														<p class="project-subtitle">Perambalur <span class="colon">|</span> 2018 <span class="label">Residential</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item interior">
+												<figure class="featured-image">
+													<a href="projects/kmsroof"><img src="Interior/KMSRoof/roof1.JPG" loading="lazy" alt="KMS Roof Garden"></a>
+													<figcaption>
+														<h2 class="project-title"><a href="projects/kmsroof">KMS Roof Garden</a></h2>
+														<p class="project-subtitle">Chennai <span class="colon">|</span> 2019 <span class="label">Interiors</span></p>
+													</figcaption>
+												</figure>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item urbandesign"></div>
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 project-item filterable-item construction"></div>
+										</div>
+									</div>
+					</div>
 					</div>
 				</div> <!-- .page -->
 				<a href="#" id="toTop" title="Go to top"> <i class="fa fa-arrow-up"></i> </a>
@@ -296,15 +301,15 @@
 			<footer class="site-footer">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 								<address>
 									<a href="https://goo.gl/maps/X5x2udvk5W63WM189" target="_blank" style="color:#f4c545;"><p><span class="site-name">PVSS Associates</span><br>Plot No:154, Chamundeswari Nivas <br> Alagu Nagar (Arivu Thirukovil Backside) <br> Seelanaickenpatty, Salem - 636201</p></a>
 								</address>
 						</div> <!-- .pull-left -->
-						<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 							<a href="tel:9442265849" class="phone">9442265849</a>
 						</div>
-						<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 							<a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=contact@pvssassociates.com&tf=1&su=Lets%20work%20together%20on%20my%20dream%20house" target="_blank" class="email pull-right">contact@pvssassociates.com</a>
 							<div class="colophon pull-right">Copyright 2019. Designed and Developed by <a href="https://www.google.com/search?q=Goss+Gowtham" title="Gowthamnarayanan S" target="_blank">Goss Gowtham</a></div>
 						</div> <!-- .pull-right -->
