@@ -1496,11 +1496,25 @@ form input[type="submit"], form button, form input[type="reset"] {
     min-height: 300px; }
 
 .section-title {
-  font-size: 36px;
-  font-size: 2.0em;
-  letter-spacing: 2px;
-  font-weight: 300;
-  text-transform: uppercase; }
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  }
+
+.unaku {
+  background-color: #f4c545;
+  border-radius: 6px;
+  color: #000;
+  font-weight: 600;
+  padding: 0px 15px;
+  box-shadow: 2px 2px 20px #000;
+  text-transform: uppercase;
+}
+
+.feature-title .unaku {
+  font-size: 18px;
+  padding: 0px 5px;
+}
 
 .separator {
   border: none;
@@ -1598,7 +1612,18 @@ form input[type="submit"], form button, form input[type="reset"] {
   align-content: center;
   width:250px;
   height:250px;
+  background-image: url("images/logo.jpg");
+  background-size: cover;
   }
+
+.Subramanian{
+  background-image: url("Interior/KMSRoof/roof1.JPG");
+  background-size: cover;
+}
+.Venugopal{
+  background-image: url("Interior/EshulalOfficeSalem/office1.jpg");
+  background-size: cover;
+}
 
 .feature-numbered {
   text-align: center; }
@@ -1761,6 +1786,7 @@ form input[type="submit"], form button, form input[type="reset"] {
     max-width: 100%;
     margin-bottom: 20px;
     background-image: url(images/logo.jpg);
+    background-size: cover;
     height: 250px;
     width: 350px;
     object-fit: cover;
