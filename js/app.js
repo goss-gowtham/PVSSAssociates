@@ -82,15 +82,19 @@
 	});
 	$(window).scroll(function() {
     if ($(this).scrollTop()) {
-        $('#toTop:hidden').stop(true, true).fadeIn();
+        $('.toTop:hidden').stop(true, true).fadeIn();
     } else {
-        $('#toTop').stop(true, true).fadeOut();
+        $('.toTop').stop(true, true).fadeOut();
     }
 		$('filterable-items').fadeIn(300);
 	});
-	$('#toTop').click(function(e) {
+	$('.toTop').click(function(e) {
 			e.preventDefault();
 			$('html, body').animate({scrollTop: 0});
 			return false;
 	});
+	$(".featured-image").click(function() {
+  window.location = $(this).find("a").attr("href");
+  return false;
+});
 })(jQuery, document, window);
