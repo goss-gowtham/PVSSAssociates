@@ -29,7 +29,7 @@
 	});
 	$(window).load(function(){
 		var $container = $('.filterable-items');
-	   $(".filterable-nav").show();
+	   $(".filterable-nav").css("display", "inline-block");
 		 $(".filter-architecture").hide();
 	   $("#spin").hide();
 	    $container.isotope({

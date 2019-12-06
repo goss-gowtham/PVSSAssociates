@@ -1695,13 +1695,16 @@ figcaption {
 
 .filterable-nav {
   display: none;
+  transform: translateX(15%);
   position: sticky;
   top:0;
   z-index: 300;
   background-color: #212121;
   text-align: center;
-  padding: 10px;
-  margin: 50px 0; }
+  border-radius: 32px;
+  box-shadow: 2px 2px 10px #000;
+  background-color: #121212;
+  margin: 20px 20px; }
   .filterable-nav .mobile-filter {
     display: none;
     -webkit-appearance: none;
@@ -1722,46 +1725,29 @@ figcaption {
       } }
   .filterable-nav a {
     display: inline-block;
-    padding: 10px 20px;
-    margin-right: 10px;
-    margin-top: 10px;
-    border: 2px solid #383838;
+    padding: 5px 26px;
+    letter-spacing: 1px;
     position: relative;
-    color: #fff;
-    text-transform: uppercase;
-    -webkit-transition: .3s ease;
-            transition: .3s ease; }
+    font-weight: 500;
+    color: #777;
+    text-transform: uppercase; }
     @media screen and (max-width: 768px) {
       .filterable-nav a {
         display: none; } }
     .filterable-nav a:before, .filterable-nav a:after {
-      content: " ";
       width: 20px;
       height: 20px;
       position: absolute;
       background: #212121;
       -webkit-transition: .3s ease;
               transition: .3s ease; }
-    .filterable-nav a:before {
-      border-bottom: 2px solid #383838;
-      -webkit-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-              transform: rotate(-45deg);
-      top: -10px;
-      left: -10px; }
-    .filterable-nav a:after {
-      border-top: 2px solid #383838;
-      -webkit-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-              transform: rotate(-45deg);
-      bottom: -10px;
-      right: -10px; }
-    .filterable-nav a.current, .filterable-nav a:hover {
-      background-color: #000;
-      border-color: #f4c545;
-      color: #f4c545; }
+    .filterable-nav a.current {
+      border: 1.5px solid #c9970e;
+      border-radius: 32px;
+      color: #fff; }
       .filterable-nav a.current:before, .filterable-nav a.current:after, .filterable-nav a:hover:before, .filterable-nav a:hover:after {
         border-color: #f4c545; }
+
 
 .filterable-items {
   *zoom: 1;
