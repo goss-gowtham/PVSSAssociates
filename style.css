@@ -1701,9 +1701,9 @@ figcaption {
   top:0;
   z-index: 300;
 }
+
 .filterable-nav .all-filter{
   transform: translateX(15%);
-  background-color: #212121;
   text-align: center;
   border-radius: 32px;
   box-shadow: 0px 2px 7px -2px #000;
@@ -1754,17 +1754,14 @@ figcaption {
 
 .red {
   color: #ff2020 !important;
-  border-right: 0.1px solid #ddd;
-  border-radius: 32px;
 }
 .filterable-nav :focus {
   box-shadow: 0px 0px 0px #000;
 }
 .filterable-nav .filter-architecture {
-  transform: translateX(60%);
+  transform: translateX(35%);
   top:0;
   z-index: 300;
-  background-color: #212121;
   text-align: center;
   border-radius: 32px;
   box-shadow: 2px 2px 10px #000;

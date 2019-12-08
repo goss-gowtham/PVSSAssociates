@@ -47,6 +47,7 @@
 		        $('.filterable-nav').removeClass('current');
 						$(this).addClass('current');
 		        var selector = $(this).attr('data-filter');
+		        var filterback = $(this).attr('data-filterback');
 						if(selector==".architecture" || selector==".industrial" || selector==".residential" || selector==".institution"){
 							$('.filter-architecture').show();
 							$('.all-filter').hide();
@@ -54,6 +55,9 @@
 						else{
 							$('.all-filter').show();
 							$('.filter-architecture').hide();
+						}
+						if(filterback=="yes"){
+							$('.default').addClass('current');
 						}
 		        $container.isotope({
 								itemSelector: '.project-item',
