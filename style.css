@@ -1524,22 +1524,32 @@ form input[type="submit"], form button, form input[type="reset"] {
   text-align: center;
 }
 
-.featured-image {
-  box-shadow: 2px 2px 20px #000;
+.project, .featured-image {
+  box-shadow: 2px 2px 10px #000;
   background-color: #121212;
   border-radius: 10px;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
-.featured-image:hover {
-  box-shadow: 2px 2px 5px #000;
-  transform: scale(1.1);
-  transition-delay: 0.5s;
+.project:hover, .featured-image:hover {
+  box-shadow: 2px 2px 20px #000;
 }
-.featured-image img {
+.project img, .featured-image img {
   border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+}
+.project:hover img, .featured-image:hover img {
+  border-radius: 10px 10px 0px 0px;
+  transform: scale(1.1);
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  object-fit: cover;
+  overflow: hidden;
 }
 figcaption {
   padding: 0px 10px;
+  overflow: hidden;
 }
 .more-link {
   padding: 0px 10px;
@@ -1714,18 +1724,17 @@ figcaption {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border: 2px solid #f4c545;
+    border: 1.5px solid #f4c545;
     padding: 10px 20px;
-    margin-left: 20px;
-    text-align: center;
+    margin-left: 40px;
     color: #f4c545;
-    border-radius: 5px;
-    background: none;
+    border-radius: 16px;
+    background-color: #121212;
     text-transform: uppercase;
     outline: none; }
     @media screen and (max-width: 768px) {
       .filterable-nav .mobile-filter {
-        display: block;
+        display: inline-block;
       } }
   .filterable-nav a {
     display: inline-block;
