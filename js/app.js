@@ -40,6 +40,7 @@
 		    	e.preventDefault();
 		        $('.filterable-nav').removeClass('current');
 						$(this).addClass('current');
+						$('html, body').animate({scrollTop: 0});
 		        var selector = $(this).attr('data-filter');
 		        var filterback = $(this).attr('data-filterback');
 						if(selector==".architecture" || selector==".industrial" || selector==".residential" || selector==".institution"){
@@ -59,7 +60,7 @@
 		            animationOptions: {
 		                duration: 750,
 		                easing: 'linear',
-		                queue: false
+		                queue: true
 		            }
 		         });
 		         return false;
