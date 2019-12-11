@@ -1,7 +1,9 @@
 /* Developed by Gowthamnarayanan S */
 
 @import url('https://fonts.googleapis.com/css?family=Limelight&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300|Roboto:100i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 article,
 aside,
 details,
@@ -313,21 +315,23 @@ form input[type="submit"], form button, form input[type="reset"] {
   background: none;
   padding: 10px 20px;
   position: relative;
+  border-radius: 5px;
   margin: 5px 0px 10px 0px;
   display: inline-block;
   -webkit-transition: .3s ease;
           transition: .3s ease; }
   .button:before, form input[type="submit"]:before, form button:before, form input[type="reset"]:before, .button:after, form input[type="submit"]:after, form button:after, form input[type="reset"]:after {
-    content: " ";
     width: 20px;
     height: 20px;
+    border-radius: 5px;
     position: absolute;
     background: #212121;
     -webkit-transition: .3s ease;
             transition: .3s ease; }
   .button:hover, form input[type="submit"]:hover, form button:hover, form input[type="reset"]:hover {
-    background-color: #000;
-    color: #f4c545; }
+    background-color: #f4c545;
+    color: #121212;
+    font-weight: 800;}
     .button:hover:before, form input[type="submit"]:hover:before, form button:hover:before, form input[type="reset"]:hover:before, .button:hover:after, form input[type="submit"]:hover:after, form button:hover:after, form input[type="reset"]:hover:after {
       border-color: white; }
   .button:before, form input[type="submit"]:before, form button:before, form input[type="reset"]:before {
@@ -1353,6 +1357,7 @@ form input[type="submit"], form button, form input[type="reset"] {
       text-transform: capitalize !important;
       font-family: Limelight;
       color: #f4c545;
+      font-size: 16px;
       margin-bottom: 0; }
 
 .main-navigation {
@@ -1519,7 +1524,7 @@ form input[type="submit"], form button, form input[type="reset"] {
   font-size: 24px;
   padding: 0px 15px;
   box-shadow: 2px 2px 20px #000;
-  display: block;
+  display: inline-block;
   text-transform: uppercase;
   text-align: center;
 }
@@ -1555,11 +1560,14 @@ figcaption {
   padding: 0px 10px;
 }
 .block {
-  text-align: justify;
+  text-align: center;
   padding: 20px;
   margin: 5px;
 }
-
+.block p {
+  color: #ddd;
+  font-size: 16px;
+}
 .feature-title .unaku {
   font-size: 18px;
   padding: 0px 5px;
@@ -1647,14 +1655,15 @@ figcaption {
   font-family: Limelight;
 }
 .intro .about-date {
-  font-size: 18px;
-  font-weight: 50;
-  font-family: cursive;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  font-family: Quicksand;
 }
 .intro .about-company{
-  font-size: 21px;
+  font-size: 23px;
   color: #f4c545;
-  font-family: Roboto;
+  font-family: "Josefin Sans";
   font-weight: 200;
 }
 .intro .about-indent{
@@ -1709,11 +1718,12 @@ figcaption {
   display: none;
   position: sticky;
   top:0;
+  left: 15%;
   z-index: 300;
 }
 
 .filterable-nav .all-filter{
-  transform: translateX(15%);
+  /* transform: translateX(15%); */
   text-align: center;
   border-radius: 32px;
   box-shadow: 0px 2px 7px -2px #000;
@@ -1768,7 +1778,6 @@ figcaption {
   box-shadow: 0px 0px 0px #000;
 }
 .filterable-nav .filter-architecture {
-  transform: translateX(35%);
   top:0;
   z-index: 300;
   text-align: center;
@@ -1895,7 +1904,8 @@ figcaption {
 /* Contact us text and button on Home page */
 .contact-text {
   font-size: 40px;
-  font-family: "Indie Flower";
+  font-family: "Lilita One";
+  font-weight: 400;
   display: block;
   margin: 20px;
   /* font-weight: 600; */
@@ -2027,10 +2037,19 @@ figcaption {
     padding-left: 100px;
     font-size: 15px;
   }
+  .site-footer .email {
+    padding-left: 100px;
+    font-size: 16px;
+  }
   .site-footer .colophon {
     padding-top: 35px;
     clear: both;
+    text-align: right;
+    left:0;
     font-style: italic;}
+    .colophon a {
+      font-size: 16px;
+    }
     @media screen and (max-width: 480px) {
       .site-footer .colophon {
         padding-top: 15px;
