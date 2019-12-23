@@ -68,6 +68,7 @@
 	    $('.mobile-filter').change(function(){
 
 	        var selector = $(this).val();
+					$('html, body').animate({scrollTop: 0});
 	        $container.isotope({
 	            filter: selector,
 	            animationOptions: {

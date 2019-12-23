@@ -316,6 +316,7 @@ form input[type="submit"], form button, form input[type="reset"] {
   padding: 10px 20px;
   position: relative;
   border-radius: 5px;
+  color: #f4c545;
   margin: 5px 0px 10px 0px;
   display: inline-block;
   -webkit-transition: .3s ease;
@@ -1437,7 +1438,7 @@ form input[type="submit"], form button, form input[type="reset"] {
       overflow: hidden;
       height: 0; }
     .hero-slider .slides li {
-      min-height: 100vh;
+      min-height: 90vh;
       background-size: cover;
       width: 100%;
       background-position: center center; }
@@ -1516,6 +1517,18 @@ form input[type="submit"], form button, form input[type="reset"] {
   text-transform: uppercase;
   }
 
+.linebelow-title:after {
+   background: none repeat scroll 0 0 #f4c545;
+   margin-bottom: 50px;
+   border-radius: 7px;
+   bottom: -10px;
+   content: "";
+   display: block;
+   height: 4px;
+   position: relative;
+   width: 70px;
+}
+
 .unaku {
   background-color: #f4c545;
   border-radius: 6px;
@@ -1544,6 +1557,7 @@ form input[type="submit"], form button, form input[type="reset"] {
   border-radius: 10px 10px 0px 0px;
   object-fit: cover;
 }
+
 .project:hover img, .featured-image:hover img {
   border-radius: 10px 10px 0px 0px;
   transform: scale(1.1);
@@ -1636,6 +1650,7 @@ figcaption {
     font-size: 2.0em;
     list-style: 3px;
     font-weight: 300;
+    margin-left: 30px;
     text-transform: uppercase; }
   .page p {
     font-size: 16px;
@@ -1736,7 +1751,7 @@ figcaption {
     appearance: none;
     border: 1.5px solid #f4c545;
     padding: 10px 20px;
-    margin-left: 40px;
+    margin-left: 25px;
     color: #f4c545;
     border-radius: 16px;
     background-color: #121212;
