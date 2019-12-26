@@ -97,8 +97,11 @@
   window.location = $(this).find("a").attr("href");
   return false;
 	});
-	var num = $('#formCheck').val();
-	if(num==10){
-		$(".formChecked").show();
-	}
+	$("#formCheck").on("keyup", function(){
+    if($(this).val() == 10){
+        $("input[type='submit']").removeAttr("disabled");
+    } else {
+        $("input[type='submit']").attr("disabled", "disabled");
+    }
+});
 })(jQuery, document, window);

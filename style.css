@@ -1737,6 +1737,11 @@ figcaption {
   z-index: 300;
 }
 
+input[type='submit']:disabled{
+  border: 2px solid #999999;
+  color: #666666;
+}
+
 .filterable-nav .all-filter{
   text-align: center;
   border-radius: 32px;
