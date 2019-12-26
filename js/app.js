@@ -43,7 +43,7 @@
 						$('html, body').animate({scrollTop: 0});
 		        var selector = $(this).attr('data-filter');
 		        var filterback = $(this).attr('data-filterback');
-						if(selector==".architecture" || selector==".industrial" || selector==".residential" || selector==".institution"){
+						if(selector==".architecture" || selector==".industrial" || selector==".residential" || selector==".institution" || selector==".commercial" || selector==".publicbuilding"){
 							$('.filter-architecture').show();
 							$('.all-filter').hide();
 						}
@@ -96,5 +96,9 @@
 	$(".featured-image").click(function() {
   window.location = $(this).find("a").attr("href");
   return false;
-});
+	});
+	var num = $('#formCheck').val();
+	if(num==10){
+		$(".formChecked").show();
+	}
 })(jQuery, document, window);
