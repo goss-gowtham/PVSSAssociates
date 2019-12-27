@@ -97,7 +97,7 @@
   window.location = $(this).find("a").attr("href");
   return false;
 	});
-	$("#formCheck").on("keyup", function(){
+	$("#formCheck").on("keyup input", function(){
     if($(this).val() == 10){
         $("input[type='submit']").removeAttr("disabled");
     } else {
