@@ -80,6 +80,8 @@
 	         return false;
 	    });
 	});
+
+	//Navigate to top of the page
 	$(window).scroll(function() {
     if ($(this).scrollTop()) {
         $('.toTop:hidden').stop(true, true).fadeIn();
@@ -93,15 +95,28 @@
 			$('html, body').animate({scrollTop: 0});
 			return false;
 	});
+
+	//Click all over div to navigate
 	$(".featured-image").click(function() {
   window.location = $(this).find("a").attr("href");
   return false;
 	});
+
+	//Click to open Modal
+	$(".modal").click(function() {
+  var lol = $(this).find("img").attr("src");
+	console.log(lol);
+	$('modalImg').show();
+	$('.modalImg').css("background-image", "url("+lol+")");  
+  return false;
+	});
+
+	//Form Check script to disable enable button
 	$("#formCheck").on("keyup input", function(){
     if($(this).val() == 10){
         $("input[type='submit']").removeAttr("disabled");
     } else {
         $("input[type='submit']").attr("disabled", "disabled");
     }
-});
+	});
 })(jQuery, document, window);

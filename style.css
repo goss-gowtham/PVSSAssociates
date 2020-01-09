@@ -1727,6 +1727,12 @@ figcaption {
   color: #f4c545;
 }
 
+/* Modal Image */
+.modalImg {
+  display: none;
+  height: 600px;
+  width: 450px;
+}
 
 /* Filter Nav Style */
 .filterable-nav{
