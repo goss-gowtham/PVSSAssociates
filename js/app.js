@@ -83,6 +83,7 @@
 
 	//Navigate to top of the page
 	$(window).scroll(function() {
+		var wH = $(window).height(), wS = $(this).scrollTop();
     if ($(this).scrollTop()) {
         $('.toTop:hidden').stop(true, true).fadeIn();
     } else {
@@ -99,15 +100,6 @@
 	//Click all over div to navigate
 	$(".featured-image").click(function() {
   window.location = $(this).find("a").attr("href");
-  return false;
-	});
-
-	//Click to open Modal
-	$(".modal").click(function() {
-  var lol = $(this).find("img").attr("src");
-	console.log(lol);
-	$('modalImg').show();
-	$('.modalImg').css("background-image", "url("+lol+")");  
   return false;
 	});
 
