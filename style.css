@@ -47,7 +47,7 @@ textarea {
 body {
   margin: 0;
   min-height:100vh;
-  background-color: #212121;
+  background: linear-gradient(to right bottom, #212121 60%, #111 60%) no-repeat fixed right bottom;
   overflow: auto;
   overscroll-behavior: none;
   -webkit-overflow-scrolling:touch;
@@ -1834,6 +1834,9 @@ input[type='submit']:disabled{
   border-radius: 50%;
   color: #f4c545;
   cursor: pointer;
+  background-color: #111;
+  border: none;
+  outline: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -1850,7 +1853,8 @@ input[type='submit']:disabled{
     color: #f4c545;
     cursor: pointer;
     border-radius: 32px;
-  }  }
+  }
+}
 
 #myInput {
   width: 100%;
@@ -1882,8 +1886,8 @@ input[type='submit']:disabled{
     margin-bottom: 20px;
     background-image: url(images/logo.jpg);
     background-size: cover;
-    height: 250px;
-    width: 350px;
+    height: 200px;
+    width: 300px;
     object-fit: cover;
     display: block; }
   .project-item .project-title {
@@ -1936,9 +1940,12 @@ input[type='submit']:disabled{
   /* font-weight: 600; */
   text-align: center;
 }
+
 .contact-da {
   text-align: center;
+  margin-top: 2rem;
 }
+
 .contact-button {
   border: 2px solid #f4c545;
   border-radius: 6px;
@@ -1955,6 +1962,28 @@ input[type='submit']:disabled{
   font-weight: 600;
 }
 
+
+@media screen and (min-width: 480px) {
+  .illustration {
+    width: 100%;
+    height: 100%;
+    cursor: default;
+  }
+  .margin {
+    margin-top: 5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .illustration {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2em;
+    pointer-events: none;
+  }
+  .marginIndex {
+    margin-top: 5rem;
+  }
+}
 
 /*labels*/
 .project-subtitle .label {
