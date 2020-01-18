@@ -1,206 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131832126-2"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-131832126-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-		  gtag('config', 'UA-131832126-2');
-		</script>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
-		<meta name="description" content="PVSS Associates is an Architectural firm with associateship between Ranga Construction and CS Design Studio, former focusing on Construction Management and latter focusing on Design &amp; Research">
-		<meta name="keywords" content="Best Architectural in Salem, Salem architecture, salem construction, salem interiors, architectural firm in salem,First Architecture in Salem, First Architecture, Best Architecture in Salem, House construction, PVSS Associates, PVSS, Salem Interiors">
-		<meta name="theme-color" content="#000"/>
-		<title>Home | PVSS Associates</title>
-		<link rel="icon" href="images/favicon.jpg" type="image/x-icon">
-		<!-- Loading third party fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+      gtag("config", "UA-131832126-2");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,maximum-scale=1"
+    />
+    <meta
+      name="description"
+      content="PVSS Associates is an Architectural firm with associateship between Ranga Construction and CS Design Studio, former focusing on Construction Management and latter focusing on Design &amp; Research"
+    />
+    <meta
+      name="keywords"
+      content="Best Architectural in Salem, Salem architecture, salem construction, salem interiors, architectural firm in salem,First Architecture in Salem, First Architecture, Best Architecture in Salem, House construction, PVSS Associates, PVSS, Salem Interiors"
+    />
+    <meta name="theme-color" content="#000" />
+    <title>Home | PVSS Associates</title>
+    <link rel="icon" href="images/favicon.jpg" type="image/x-icon" />
+    <!-- Loading third party fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-		<!-- Loading main css file -->
-		<link rel="stylesheet" href="style.css">
+  <body>
+    <div id="site-content">
+      <div class="site-header">
+        <div class="container">
+          <a href="#" id="branding">
+            <img src="images/favicon.jpg" alt="logo" class="logo" />
+            <div class="logo-text">
+              <h1 class="site-title">PVSS Associates</h1>
+            </div>
+          </a>
+          <div class="main-navigation">
+            <button type="button" class="menu-toggle">
+              <i class="fa fa-bars"></i>
+            </button>
+            <ul class="menu">
+              <li class="menu-item current-menu-item"><a href="#">Home</a></li>
+              <li class="menu-item"><a href="about">About</a></li>
+              <li class="menu-item"><a href="projects">our Projects</a></li>
+              <li class="menu-item"><a href="contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="mobile-navigation"></div>
+        </div>
+      </div>
 
-		<!--[if lt IE 9]>
-		<script src="js/ie-support/html5.js"></script>
-		<script src="js/ie-support/respond.js"></script>
-		<![endif]-->
+      <div class="hero hero-slider">
+        <ul class="slides">
+          <li data-bg-image="Architecture/HillViewVillasSalem/hill1.jpg">
+            <div class="container">
+              <div class="slide-title">
+                <span>You Dream, We Design</span>
+              </div>
+            </div>
+          </li>
+          <li data-bg-image="Architecture/JSWAuditoriumMecheri/jsw1.jpg">
+            <div class="container">
+              <div class="slide-title">
+                <span>We Strive to give you the best</span>
+              </div>
+            </div>
+          </li>
+          <li data-bg-image="Interior/KMSRoof/roof1.JPG">
+            <div class="container">
+              <div class="slide-title">
+                <span>We design your future space</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-	</head>
+      <main class="main-content">
+        <div class="fullwidth-block latest-projects-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-7 col-sm-8 col-md-9">
+                <h2 class="section-title linebelow-title">
+                  Featured projects
+                  <i
+                    class="fa fa-home icon"
+                    aria-hidden="true"
+                    style="font-size: 24px; color:#f4c545"
+                  ></i>
+                </h2>
+              </div>
+              <div class="col-xs-5 col-sm-4 col-md-3">
+                <a
+                  href="projects"
+                  class="button"
+                  style="position: relative;float: right;margin-bottom:10px"
+                  >SHOW ALL</a
+                >
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-5 col-md-3 col-lg-3">
+                <div class="project">
+                  <figure class="project-thumbnail">
+                    <a href="projects/Attur-Kannadasan"
+                      ><img
+                        draggable="false"
+                        src="Renovation/KannadasanResidenceAttur/attur1.jpg"
+                        alt="Project 1"
+                    /></a>
+                  </figure>
+                  <h3 class="project-title">
+                    <a href="projects/Attur-Kannadasan">Kanadasan House</a>
+                  </h3>
+                  <p class="project-subtitle">
+                    Attur <span class="colon">|</span> 2009<span class="label"
+                      >Renovation</span
+                    >
+                  </p>
+                  <a href="projects" aria-label="Read more"></a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-5 col-md-3 col-lg-3">
+                <div class="project">
+                  <figure class="project-thumbnail">
+                    <a href="projects/HillView"
+                      ><img
+                        draggable="false"
+                        src="Architecture/HillViewVillasSalem/hill2.jpg"
+                        alt="Project 2"
+                    /></a>
+                  </figure>
+                  <h3 class="project-title">
+                    <a href="projects/HillView">Hill View Villas</a>
+                  </h3>
+                  <p class="project-subtitle">
+                    Salem <span class="colon">|</span> 2016
+                    <span class="label">Residence</span>
+                  </p>
+                  <a href="projects/HillView" aria-label="Read more"></a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-5 col-md-3 col-lg-3">
+                <div class="project">
+                  <figure class="project-thumbnail">
+                    <a href="projects/Arani-SureshResidence"
+                      ><img
+                        draggable="false"
+                        src="Renovation/SureshResidenceArani/suresh1.jpg"
+                        alt="Project 3"
+                    /></a>
+                  </figure>
+                  <h3 class="project-title">
+                    <a href="projects/Arani-SureshResidence">Suresh House</a>
+                  </h3>
+                  <p class="project-subtitle">
+                    Arani <span class="colon">|</span> 2010<span class="label"
+                      >Renovation</span
+                    >
+                  </p>
+                  <a
+                    href="projects/Arani-SureshResidence"
+                    aria-label="Read more"
+                  ></a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-5 col-md-3 col-lg-3">
+                <div class="project">
+                  <figure class="project-thumbnail">
+                    <a href="projects/KMS-Garden"
+                      ><img
+                        draggable="false"
+                        src="Interior/KMS/kms1.JPG"
+                        alt="Project 4"
+                    /></a>
+                  </figure>
+                  <h3 class="project-title">
+                    <a href="projects/KMS-Garden">KMS Garden</a>
+                  </h3>
+                  <p class="project-subtitle">
+                    Salem <span class="colon">|</span> 2016
+                    <span class="label">Interiors</span>
+                  </p>
+                  <a href="projects/KMS-Garden" aria-label="Read more"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <hr class="separator" />
+        <div class="fullwidth-block">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="block">
+                  <h3 class="section-title">
+                    <span class="unaku">About Us</span>
+                  </h3>
+                  <p>
+                    <span id="intro-title">PVSS Associates</span> is an
+                    associateship firm between Ranga Construction and CS Design
+                    Studio, former focusing on Construction Management and
+                    latter focusing on Design &amp; Research.
+                  </p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="block">
+                  <h3 class="section-title">
+                    <span class="unaku">High Quality </span>
+                  </h3>
+                  <p>Content under construction</p>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="block">
+                  <h3 class="section-title">
+                    <span class="unaku">Safe Future </span>
+                  </h3>
+                  <p>Content under construction</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-	<body>
+        <hr class="separator" />
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-sm-push-4 contact-da">
+              <span class="contact-text">
+                Get started to build your dream project now ! </span
+              ><br />
+              <a href="contact" class="contact-button"
+                >Contact Us <i class="fa fa-angle-right" aria-hidden="true"></i
+              ></a>
+            </div>
+            <div class="col-sm-4 col-sm-pull-8">
+              <a href="/contact"
+                ><img
+                  src="images/underConstruction.svg"
+                  class="illustration marginIndex"
+                  alt=""
+                  draggable="false"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <i class="fa fa-arrow-up toTop" title="Go to top"></i>
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+              <address>
+                <a
+                  href="https://goo.gl/maps/X5x2udvk5W63WM189"
+                  target="_blank"
+                  rel="noopener"
+                  style="color:#f4c545;"
+                  ><p>
+                    <span class="site-name">PVSS Associates</span><br />Plot
+                    No:154, Chamundeswari Nivas <br />
+                    Alagu Nagar (Arivu Thirukovil Backside) <br />
+                    Seelanaickenpatty, Salem - 636201
+                  </p></a
+                >
+              </address>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+              <a href="tel:9442265849" class="phone">9442265849</a>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+              <a
+                href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=contact@pvssassociates.com&tf=1&su=Lets%20work%20together%20on%20my%20dream%20house"
+                target="_blank"
+                rel="noopener"
+                class="email pull-right"
+                >contact@pvssassociates.com</a
+              >
+              <div class="colophon pull-right">
+                Copyright 2019. Designed and Developed by
+                <a
+                  href="https://www.google.com/search?q=Goss+Gowtham"
+                  title="Gowthamnarayanan S"
+                  target="_blank"
+                  rel="noopener"
+                  >Goss Gowtham</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-		<div id="site-content">
-			<div class="site-header">
-				<div class="container">
-					<a href="#" id="branding">
-						<img src="images/favicon.jpg"  alt="logo" class="logo">
-						<div class="logo-text">
-							<h1 class="site-title">PVSS Associates</h1>
-						</div>
-					</a> <!-- #branding -->
-
-					<!-- Default snippet for navigation -->
-					<div class="main-navigation">
-						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
-						<ul class="menu">
-							<li class="menu-item current-menu-item"><a href="#">Home</a></li>
-							<li class="menu-item"><a href="about">About</a></li>
-							<li class="menu-item"><a href="projects">our Projects</a></li>
-							<li class="menu-item"><a href="contact">Contact</a></li>
-						</ul> <!-- .menu -->
-					</div> <!-- .main-navigation -->
-					<div class="mobile-navigation"></div>
-				</div>
-			</div> <!-- .site-header -->
-
-			<div class="hero hero-slider">
-				<ul class="slides">
-					<li data-bg-image="Architecture/HillViewVillasSalem/hill1.jpg">
-						<div class="container">
-							<div class="slide-title">
-								<span>You Dream, We Design</span>
-							</div>
-						</div>
-					</li>
-					<li data-bg-image="Architecture/JSWAuditoriumMecheri/jsw1.jpg">
-						<div class="container">
-							<div class="slide-title">
-								<span>We Strive to give you the best</span>
-							</div>
-						</div>
-					</li>
-					<li data-bg-image="Interior/KMSRoof/roof1.JPG">
-						<div class="container">
-							<div class="slide-title">
-								<span>We design your future space</span>
-							</div>
-						</div>
-					</li>
-				</ul> <!-- .slides -->
-			</div> <!-- .hero-slider -->
-
-			<main class="main-content">
-				<div class="fullwidth-block latest-projects-section">
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-7 col-sm-8 col-md-9">
-								<h2 class="section-title linebelow-title">Featured projects <i class="fa fa-home icon" aria-hidden="true" style="font-size: 24px; color:#f4c545"></i></h2>
-							</div>
-							<div class="col-xs-5 col-sm-4 col-md-3">
-								<a href="projects" class="button" style="position: relative;float: right;margin-bottom:10px">SHOW ALL</a>
-							</div>
-						</div>
-						<div class="row">
-								<div class="col-xs-12 col-sm-5 col-md-3 col-lg-3">
-									<div class="project">
-										<figure class="project-thumbnail"><a href="projects/Attur-Kannadasan"><img draggable="false" src="Renovation/KannadasanResidenceAttur/attur1.jpg" alt="Project 1"></a></figure>
-										<h3 class="project-title"><a href="projects/Attur-Kannadasan">Kanadasan House</a></h3>
-										<p class="project-subtitle">Attur <span class="colon">|</span> 2009<span class="label">Renovation</span></p>
-										<a href="projects" aria-label="Read more"></a>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-5 col-md-3 col-lg-3">
-									<div class="project">
-										<figure class="project-thumbnail"><a href="projects/HillView"><img draggable="false" src="Architecture/HillViewVillasSalem/hill2.jpg" alt="Project 2"></a></figure>
-										<h3 class="project-title"><a href="projects/HillView">Hill View Villas</a></h3>
-										<p class="project-subtitle">Salem <span class="colon">|</span> 2016 <span class="label">Residence</span></p>
-										<a href="projects/HillView" aria-label="Read more"></a>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-5 col-md-3 col-lg-3">
-									<div class="project">
-										<figure class="project-thumbnail"><a href="projects/Arani-SureshResidence"><img draggable="false" src="Renovation/SureshResidenceArani/suresh1.jpg" alt="Project 3"></a></figure>
-										<h3 class="project-title"><a href="projects/Arani-SureshResidence">Suresh House</a></h3>
-										<p class="project-subtitle">Arani <span class="colon">|</span> 2010<span class="label">Renovation</span></p>
-										<a href="projects/Arani-SureshResidence" aria-label="Read more"></a>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-5 col-md-3 col-lg-3">
-									<div class="project">
-										<figure class="project-thumbnail"><a href="projects/KMS-Garden"><img draggable="false" src="Interior/KMS/kms1.JPG" alt="Project 4"></a></figure>
-										<h3 class="project-title"><a href="projects/KMS-Garden">KMS Garden</a></h3>
-										<p class="project-subtitle">Salem <span class="colon">|</span> 2016 <span class="label">Interiors</span></p>
-										<a href="projects/KMS-Garden" aria-label="Read more"></a>
-									</div>
-								</div>
-						</div> <!-- .row -->
-					</div> <!-- .container -->
-				</div> <!-- .fullwidth-block.latest-projects-section -->
-
-				<hr class="separator">
-				<div class="fullwidth-block">
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-12 col-sm-6 col-md-4">
-									<div class="block">
-										<h3 class="section-title"><span class="unaku">About Us</span>  </h3>
-										<p><span id="intro-title">PVSS Associates</span> is an associateship firm between Ranga Construction and CS Design Studio, former focusing on Construction Management and latter focusing on Design &amp; Research.</p>
-									</div>
-							</div>
-							<div class="col-xs-12 col-sm-6 col-md-4">
-									<div class="block">
-										<h3 class="section-title"><span class="unaku">High Quality </span></h3>
-										<p>Content under construction</p>
-									</div>
-							</div>
-							<div class="col-xs-12 col-sm-6 col-md-4">
-									<div class="block">
-										<h3 class="section-title"><span class="unaku">Safe Future </span></h3>
-										<p>Content under construction</p>
-									</div>
-							</div>
-						</div>
-						 <!-- .row -->
-
-					</div> <!-- .container -->
-				</div> <!-- .fullwidth-block -->
-
-				<hr class="separator">
-				<div class="container">
-					<div class="row">
-							<div class="col-sm-8 col-sm-push-4 contact-da">
-								<span class="contact-text"> Get started to build your dream project now ! </span><br/>
-								<a href="contact" class="contact-button">Contact Us <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-							</div>
-							<div class="col-sm-4 col-sm-pull-8">
-								<a href="/contact"><img src="images/underConstruction.svg" class="illustration marginIndex" alt="" draggable="false"/></a>
-							</div>
-					</div>
-				</div>
-			</main> <!-- .main-content -->
-			 <i class="fa fa-arrow-up toTop" title="Go to top"></i>
-			<footer class="site-footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
-								<address>
-									<a href="https://goo.gl/maps/X5x2udvk5W63WM189" target="_blank" rel="noopener" style="color:#f4c545;"><p><span class="site-name">PVSS Associates</span><br>Plot No:154, Chamundeswari Nivas <br> Alagu Nagar (Arivu Thirukovil Backside) <br> Seelanaickenpatty, Salem - 636201</p></a>
-								</address>
-						</div> <!-- .pull-left -->
-						<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
-							<a href="tel:9442265849" class="phone">9442265849</a>
-						</div>
-						<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
-							<a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=contact@pvssassociates.com&tf=1&su=Lets%20work%20together%20on%20my%20dream%20house" target="_blank" rel="noopener" class="email pull-right">contact@pvssassociates.com</a>
-							<div class="colophon pull-right">Copyright 2019. Designed and Developed by <a href="https://www.google.com/search?q=Goss+Gowtham" title="Gowthamnarayanan S" target="_blank" rel="noopener">Goss Gowtham</a></div>
-						</div> <!-- .pull-right -->
-					</div>
-
-				</div> <!-- .container -->
-			</footer> <!-- .site-footer -->
-		</div>
-
-		<script src="js/jquery-1.11.1.min.js"></script>
-		<script src="js/plugins.js"></script>
-		<script src="js/app.js"></script>
-
-	</body>
-
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
